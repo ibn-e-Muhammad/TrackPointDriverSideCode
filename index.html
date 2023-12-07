@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="studentLogin.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Sign Up</header>
+        <form id="signupForm" action="#">
+          <!-- Add ID for Roll Number input -->
+          <input
+            type="text"
+            id="signupRollNumber"
+            placeholder="Assign Bus No"
+            required />
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Assign Email"
+            required />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Assign Password"
+            required />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form id="loginForm" action="#">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email address"
+            required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+      <script type="module" src="studentLogin.js"></script>
+    </section>
+  </body>
+</html>

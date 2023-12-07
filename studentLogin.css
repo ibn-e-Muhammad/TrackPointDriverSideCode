@@ -1,0 +1,142 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* padding: 40px; */
+  background: radial-gradient(circle, #690d94, #000);
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 30px 120px;
+  background: #ffffffe1; /* Set wrapper background color to white */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form.login {
+  position: absolute;
+  left: 50%;
+  bottom: -86%;
+  transform: translateX(-50%);
+  width: calc(100% + 220px);
+  padding: 20px 140px;
+  border-radius: 50%;
+  height: 100%;
+  background: rgb(132, 29, 158);
+  transition: all 0.6s ease;
+  /* box-shadow: 0 0 0 2px #000;  */
+  /* Set border color for login form */
+}
+
+.wrapper.active .form.login {
+  bottom: -15%;
+  border-radius: 35%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form header {
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form.login header {
+  color: #000;
+  opacity: 0.6;
+}
+
+.wrapper.active .form.login header {
+  opacity: 1;
+}
+
+.wrapper.active .signup header {
+  opacity: 1;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+form input {
+  height: 50px;
+  outline: none;
+  border: 1px solid gray; /* Set border color for input fields */
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.form.login input {
+  border: 1px solid gray; /* Set border color for login input fields */
+}
+
+.form.login input:focus {
+  box-shadow: 0 1px 0 #ddd;
+}
+
+.form.login .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  accent-color: #fff;
+  cursor: pointer;
+}
+
+.form.login .checkbox label {
+  cursor: pointer;
+  color: #000000;
+}
+
+form a {
+  color: #000000;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background: lavender; /* Change this line to set the background color */
+}
